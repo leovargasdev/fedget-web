@@ -1,5 +1,5 @@
 <h1 align="center">
-  FedGet
+  FeedGet
 </h1>
 
 <p align="center">
@@ -29,10 +29,17 @@ O protótipo desse website foi desenvolvido pelo [**Ilana Mallak**](https://www.
 
 Dependências usadas no projeto:
 
--  [React]()
--  [Tailwind])
--  [Headlessui]()
+-  [Vite](https://vitejs.dev/)
+-  [ReactJS](https://reactjs.org/)
+-  [Tailwind](https://tailwindcss.com/)
+-  [Headlessui](https://headlessui.dev/)
 -  [TypeScript](https://www.typescriptlang.org/)
+
+## ⚙️ Novas features
+
+- [ ] Toogle de dark/light mode
+- [ ] Abstrair as classes do tailwind
+- [ ] Listagem dos feedbacks
 
 ## 📥 Instalação e execução
 
