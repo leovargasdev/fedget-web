@@ -45,6 +45,10 @@ Dependências usadas no projeto:
 
 Faça um clone desse repositório e acesse o diretório.
 
+PS: *Adicione o host do servidor na variável VITE_API_HOST no arquivo env.example*
+
+PS 2: *Renomei o arquivo env.example para env.local*
+
 ```bash
 # Instalando as dependências
 $ npm install 
