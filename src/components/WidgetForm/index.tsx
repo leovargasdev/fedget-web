@@ -1,36 +1,7 @@
 import { useState } from "react";
-import { CloseButton } from "../CloseButton";
 
-import bugIcon from '../../assets/bug.svg'
-import ideaIcon from '../../assets/idea.svg'
-import thoughtIcon from '../../assets/thought.svg'
-import { FeedbackTypeStep } from "./Steps/FeedbackTypeStep";
-import { FeedbackContentStep } from "./Steps/FeedbackContentStep";
-import { FeedbackSuccessStep } from "./Steps/FeedbackSuccessStep";
-
-export const feedbackTypes = {
-  BUG: {
-    title: 'Problema',
-    image: {
-      source: bugIcon,
-      alt: 'Imagem de um inseto',
-    }
-  },
-  IDEA: {
-    title: 'Ideia',
-    image: {
-      source: ideaIcon,
-      alt: 'Imagem de uma lâmpada',
-    }
-  },
-  OTHER: {
-    title: 'Outro',
-    image: {
-      source: thoughtIcon,
-      alt: 'Imagem de um balão de pensamento',
-    }
-  }
-}
+import { feedbackTypes } from 'data/feedbackTypes'
+import { FeedbackTypeStep, FeedbackContentStep, FeedbackSuccessStep } from "./Steps/";
 
 export type FeedbackType = keyof typeof feedbackTypes
 
@@ -62,7 +33,7 @@ export function WidgetForm() {
       )}
       
       <footer className="text-xs text-neutral-400">
-        Feito com ♥ pela <a href="/" className="underline underline-offset-1">Rocketseat</a>
+        Feito com ♥ pela <a href="/" className="underline underline-offset-1">Leonardo Vargas</a>
       </footer>
     </div>
   )

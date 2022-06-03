@@ -1,11 +1,13 @@
 import { ArrowLeft } from "phosphor-react";
 import { FormEvent, useState } from "react";
-import { api } from "../../../services/api";
-import { CloseButton } from "../../CloseButton";
-import { Loading } from "../../Loading";
 
-import { FeedbackType, feedbackTypes } from '../index'
+import { Loading } from "components/Loading";
+import { CloseButton } from "components/CloseButton";
 import { ScreenshotButton } from "../ScreenshotButton";
+
+import { api } from "services/api";
+import { FeedbackType } from '../index'
+import { feedbackTypes } from 'data/feedbackTypes'
 
 type FeedbackContentStep = {
   feedbackType: FeedbackType
@@ -13,7 +15,11 @@ type FeedbackContentStep = {
   onFeedbackSent: () => void
 }
 
-export function FeedbackContentStep({ feedbackType, onFeedbackRestartRequested, onFeedbackSent }: FeedbackContentStep) {
+export function FeedbackContentStep({
+  feedbackType,
+  onFeedbackRestartRequested,
+  onFeedbackSent
+}: FeedbackContentStep) {
   const feedbackTypeInfo = feedbackTypes[feedbackType]
 
   const [comment, setComment] = useState<string>('')
